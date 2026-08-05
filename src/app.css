@@ -1,0 +1,124 @@
+:root {
+	--bg: #0d1017;
+	--bg-raise: #151a24;
+	--bg-inset: #0a0d13;
+	--border: #262d3b;
+	--text: #e6e9ef;
+	--text-dim: #8b94a7;
+	--rust: #f0623a;
+	--rust-soft: rgba(240, 98, 58, 0.14);
+	--js: #f5d94e;
+	--js-soft: rgba(245, 217, 78, 0.12);
+	--green: #4ade80;
+	--mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+	color-scheme: dark;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family:
+		system-ui,
+		-apple-system,
+		'Segoe UI',
+		Roboto,
+		sans-serif;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+}
+
+a {
+	color: var(--rust);
+}
+
+code {
+	font-family: var(--mono);
+	font-size: 0.9em;
+	background: var(--bg-inset);
+	border: 1px solid var(--border);
+	border-radius: 5px;
+	padding: 0.1em 0.35em;
+}
+
+pre {
+	background: var(--bg-inset);
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	padding: 1rem 1.2rem;
+	overflow-x: auto;
+	font-family: var(--mono);
+	font-size: 0.82rem;
+	line-height: 1.6;
+}
+
+pre code {
+	background: none;
+	border: none;
+	padding: 0;
+}
+
+.card {
+	background: var(--bg-raise);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 1.4rem 1.6rem;
+}
+
+button {
+	font: inherit;
+	font-weight: 600;
+	color: #fff;
+	background: var(--rust);
+	border: none;
+	border-radius: 8px;
+	padding: 0.55rem 1.2rem;
+	cursor: pointer;
+	transition: filter 0.15s;
+}
+
+button:hover:not(:disabled) {
+	filter: brightness(1.12);
+}
+
+button:disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+input[type='text'],
+input[type='number'],
+textarea,
+select {
+	font: inherit;
+	color: var(--text);
+	background: var(--bg-inset);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 0.5rem 0.75rem;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+	outline: 2px solid var(--rust);
+	outline-offset: 1px;
+}
+
+textarea {
+	resize: vertical;
+	font-family: var(--mono);
+	font-size: 0.85rem;
+}

@@ -37,7 +37,7 @@ Rust crate (native/src/lib.rs), compiled with Neon      ← Rust
 - Node.js ≥ 20
 - Rust toolchain (`rustup`, stable)
 
-## Developing
+## Run
 
 ```sh
 pnpm i
@@ -48,7 +48,7 @@ The addon rebuild is a no-op when the Rust code hasn't changed (cargo caches).
 After editing `native/src/lib.rs`, restart `npm run dev` or run
 `npm run build:native`.
 
-## Building
+## Build
 
 ```sh
 pnpm run build

@@ -16,7 +16,7 @@
 </script>
 
 <section class="hero">
-	<h1>Rust in your SvelteKit backend, <span class="accent">no FFI pain</span></h1>
+	<h1>Rust in your SvelteKit backend</h1>
 	<p class="lede">
 		This app showcases <a href="https://neon-rs.dev" target="_blank" rel="noreferrer">Neon</a> — a
 		library for writing native Node.js addons in safe Rust. The Rust crate in
@@ -48,7 +48,7 @@
    │  fetch('/api/…')
    ▼
 SvelteKit +server.ts        ← Node.js
-   │  native.countPrimes(n)
+   │  native.greet(name)
    ▼
 native/index.node           ← Rust via Neon
 </code></pre>

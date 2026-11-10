@@ -17,7 +17,7 @@
 		{ value: 30_000_000, label: '30 million' }
 	];
 
-	let limit = $state(5_000_000);
+	let limit = $state(10_000_000);
 	let result = $state<Result | null>(null);
 	let running = $state(false);
 	let errorMsg = $state('');

@@ -34,7 +34,7 @@ fn count_primes(mut cx: FunctionContext) -> JsResult<JsNumber> {
     Ok(cx.number(sieve(limit) as f64))
 }
 
-/// The same work scheduled on Node's worker thread pool via `cx.task`,
+/// The same work scheduled on the libuv thread pool via `cx.task`,
 /// resolved back to JS as a Promise — the event loop stays free.
 fn count_primes_async(mut cx: FunctionContext) -> JsResult<JsPromise> {
     let limit = cx.argument::<JsNumber>(0)?.value(&mut cx) as usize;

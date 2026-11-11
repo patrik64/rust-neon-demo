@@ -8,7 +8,7 @@ addons in safe Rust and calling them from SvelteKit server routes.
 | Demo | Neon feature |
 | --- | --- |
 | **Overview** — greeting | Basic value passing: `JsString` in, `JsString` out |
-| **Benchmark** — prime sieve | CPU-bound Rust vs identical JavaScript; `cx.task(…).promise()` running Rust on Node's worker thread pool and returning a `Promise` |
+| **Benchmark** — prime sieve | CPU-bound Rust vs identical JavaScript; `cx.task(…).promise()` running Rust on the libuv thread pool and returning a `Promise` |
 | **Text & Hashing** — word stats | Building structured JS objects from a Rust `HashMap` (`cx.empty_object()`, `obj.set`) |
 | **Text & Hashing** — SHA-256 | Using any crates.io dependency (`sha2`) behind a JS-callable function |
 

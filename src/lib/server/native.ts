@@ -12,7 +12,7 @@ export interface NativeAddon {
 	greet(name: string): string;
 	/** CPU-bound sieve of Eratosthenes, runs on the JS thread. */
 	countPrimes(limit: number): number;
-	/** Same sieve on Node's worker thread pool, returned as a Promise. */
+	/** Same sieve on the libuv thread pool, returned as a Promise. */
 	countPrimesAsync(limit: number): Promise<number>;
 	/** Rust HashMap-based analysis returned as a structured JS object. */
 	wordStats(text: string, topN: number): WordStats;

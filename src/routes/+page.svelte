@@ -71,7 +71,7 @@ native/index.node           ← Rust via Neon
 		<li>
 			<strong><a href="/benchmark">Benchmark</a></strong> — a CPU-bound prime sieve in Rust vs the
 			identical algorithm in JavaScript, plus Neon's <code>cx.task(…).promise()</code> API that runs
-			Rust on Node's worker thread pool and returns a real <code>Promise</code>.
+			Rust on the libuv thread pool and returns a real <code>Promise</code>.
 		</li>
 		<li>
 			<strong><a href="/text">Text & Hashing</a></strong> — building structured JS objects from Rust

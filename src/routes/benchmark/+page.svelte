@@ -59,7 +59,7 @@
 	Counts primes below a limit with a sieve of Eratosthenes — the identical algorithm implemented
 	twice. The JavaScript version runs in the SvelteKit server route; the Rust version is called
 	through the Neon addon, both synchronously and via
-	<code>cx.task(…).promise()</code>, which does the work on Node's worker thread pool while the
+	<code>cx.task(…).promise()</code>, which does the work on the libuv thread pool while the
 	event loop stays free.
 </p>
 
